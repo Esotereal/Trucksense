@@ -1,0 +1,31 @@
+# ====================================================================
+#  TruckSense .gitignore
+#  MOST IMPORTANT LINE: secrets.h is never committed. Commit
+#  secrets.h.example instead, and keep your real credentials local.
+# ====================================================================
+
+# --- Secrets / credentials (NEVER commit) ---
+secrets.h
+*secrets*.h
+!secrets.h.example
+.env
+
+# --- Arduino / PlatformIO build artifacts ---
+build/
+.build/
+*.bin
+*.elf
+*.hex
+*.map
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# --- Editor / IDE ---
+.vscode/
+.idea/
+*.swp
+
+# --- macOS ---
+.DS_Store
+.AppleDouble
