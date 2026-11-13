@@ -22,6 +22,11 @@ flowchart LR
 
 Sensing and the cellular link run on separate boards, connected by a one-way serial line. Either board can hang, reboot and recover without taking the other down.
 
+<p align="center">
+  <img src="docs/images/home-assistant-dashboard.png" alt="Home Assistant dashboard showing TruckSense outside temperature with a history graph, truck battery voltage, LTE connection status and LTE signal strength" width="460">
+</p>
+<p align="center"><em>TruckSense data in a Home Assistant dashboard. The firmware publishes °C, and Home Assistant converts it to your preferred unit.</em></p>
+
 ### Sensor node: `TruckSense_Sensor_v2`
 
 Every ~5 seconds it:
@@ -95,6 +100,7 @@ legacy/
   TruckSense_LTE_v1/          previous uplink build, kept for reference
 libraries/
   TinyGSM-fork-master.zip     TinyGSM fork used by the uplink
+docs/images/                  screenshots used in this README
 ```
 
 Each sketch sits in a folder with the same name, which the Arduino IDE requires.
